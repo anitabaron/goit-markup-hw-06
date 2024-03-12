@@ -533,11 +533,11 @@ section {
     pointer-events: none;
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+} */
 
 .modal {
     position: absolute;
@@ -766,4 +766,86 @@ section {
 
 .privacy-link {
     color: #4d5ae5;
+}
+
+/* --- responsive --- */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 288px;
+        padding: 0;
+    }
+    section {
+        padding: 0;
+    }
+    /* ... */
+    .container-header-wrap {
+        flex-direction: column;
+    }
+    /* .1. */
+    .blue-box {
+        max-width: 100%;
+        padding: 72px 0;
+    }
+    .main-header {
+        font-size: 36px;
+    }
+    /* .2. */
+    .goals-columns {
+        padding: 96px 0;
+    }
+    .goals-list {
+        flex-direction: column;
+    }
+    .goals-item {
+        width: 100%;
+        gap: 72px;
+    }
+    .goals-symbols {
+        position: absolute;
+        visibility: hidden;
+    }
+    /* .3. */
+    .person-list {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        gap: 72px 0;
+    }
+    /* .4. */
+    .portfolio-grid {
+        padding: 96px 0;
+    }
+    .portfolio-list {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        gap: 48px;
+    }
+    .portfolio-media {
+        width: 100%;
+    }
+    /* .F. */
+    .container-footer {
+        flex-direction: column;
+    }
+    .footer-background {
+        height: auto;
+    }
+    .sub-form {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+}
+/* .goals-columns {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+
+@media (min-width: 1158px) {
 }
