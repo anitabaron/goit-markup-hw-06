@@ -778,8 +778,14 @@ section {
     section {
         padding: 0;
     }
+    img {
+        width: 100%;
+    }
     /* ... */
     .container-header-wrap {
+        flex-direction: column;
+    }
+    .navigation {
         flex-direction: column;
     }
     /* .1. */
@@ -806,11 +812,14 @@ section {
         visibility: hidden;
     }
     /* .3. */
+    .team-background {
+        padding: 72px 0;
+    }
+
     .person-list {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        gap: 72px 0;
     }
     /* .4. */
     .portfolio-grid {
@@ -828,9 +837,14 @@ section {
     /* .F. */
     .container-footer {
         flex-direction: column;
+        gap: 72px;
     }
     .footer-background {
         height: auto;
+    }
+    .footer-left {
+        justify-content: center;
+        margin: 0 auto;
     }
     .sub-form {
         flex-direction: column;
