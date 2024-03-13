@@ -942,15 +942,122 @@ section {
     .modal {
         width: 288px;
         min-height: 623px;
-    }
+}
 
 @media (min-width: 768px) and (max-width: 1157px) {
-}
-/* .goals-columns {
+    .container {
+        max-width: 736px;
+        padding: 0;
+    }
+    img {
+        width: 100%;
+    }
+    /* .1. */
+    .blue-box {
+        max-width: 100%;
+        padding: 112px 0;
+    }
+    /* .2. */
+    .goals-columns {
+        padding: 96px 0;
+    }
+    .goals-list {
+        flex-wrap: wrap;
+    }
+    .goals-item {
+        width: 100%;
+        gap: 72px;
+    }
+    .goals-symbols {
+        position: absolute;
+        visibility: hidden;
+    }
+    .mobile-h2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .goals {
+        font-weight: 500;
+    }
+    /* .goals-columns {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     } */
+    /* .3. */
+    .team-background {
+        padding: 96px 0;
+    }
+    .person-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+    /* .4. */
+    .portfolio-grid {
+        padding: 96px 0;
+    }
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .portfolio-media {
+        width: 100%;
+        /* height:  */
+    }
+    /* .F. */
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
+    .footer-background {
+        height: auto;
+        padding: 96px 0;
+    }
+    .footer-left {
+        margin: 0 auto;
+    }
+    .sub-form {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .sm-footer-title {
+        text-align: center;
+    }
+    .logo-bottom {
+        display: block;
+        margin-right: 0;
+        align-content: center;
+        text-align: center;
+    }
+    .text-bright {
+        width: 100%;
+    }
+    .sub {
+        margin: 0;
+    }
+    .input-dark {
+        opacity: 0.3;
+    }
+    .input-dark::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        opacity: 0.6;
+    }
+    /* .modal. */
+    .modal {
+    top: 80px;
+}
+
 
 @media (min-width: 1158px) {
 }
