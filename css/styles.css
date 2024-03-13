@@ -809,6 +809,14 @@ section {
         position: absolute;
         visibility: hidden;
     }
+    .mobile-h2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .goals {
+        font-weight: 500;
+    }
     /* .3. */
     .team-background {
         padding: 72px 0;
@@ -831,6 +839,7 @@ section {
     }
     .portfolio-media {
         width: 100%;
+        /* height:  */
     }
     /* .F. */
     .container-footer {
@@ -854,15 +863,88 @@ section {
         text-align: center;
     }
     .logo-bottom {
+        display: block;
+        margin-right: 0;
         align-content: center;
         text-align: center;
+    }
+    .text-bright {
+        width: 100%;
     }
     .sub {
         margin: 0;
     }
-}
+    .input-dark {
+        opacity: 0.3;
+    }
+    .input-dark::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        opacity: 0.6;
+    }
+    /* menu hamburger */
+    .menu-hamburger {
+        position: fixed;
+        display: flex;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        background-color: white;
+        gap: 40px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .left-navi-list {
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+    }
+    .right-navi-list {
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+    }
+    .link {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+    .logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 0;
+    }
+    .container-header-wrap {
+        align-items: flex-start;
+    }
+    /* .menu-hamburger {
+            bottom: 0;
+            right: 0;
+        } */
+    .contact-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    /* modal mobile */
+    .modal {
+        width: 288px;
+        min-height: 623px;
+    }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px) {
 }
 /* .goals-columns {
         display: flex;
