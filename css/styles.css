@@ -768,6 +768,13 @@ section {
     color: #4d5ae5;
 }
 
+/* --- hidden sm mobile --- */
+.sm-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 /* --- responsive --- */
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -884,6 +891,7 @@ section {
         opacity: 0.6;
     }
     /* menu hamburger */
+
     .menu-hamburger {
         position: fixed;
         display: flex;
@@ -891,7 +899,7 @@ section {
         right: 0;
         flex-direction: column;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         z-index: 100;
         background-color: white;
         gap: 40px;
@@ -899,15 +907,26 @@ section {
         visibility: hidden;
         pointer-events: none;
     }
+    .menu-hamburger.is-open,
+    .sm-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        }
     .left-navi-list {
         flex-direction: column;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
         position: absolute;
+        top: 0;
+        left: 16px;
     }
     .right-navi-list {
+        display: flex;
         flex-direction: column;
+        position: absolute;
+        top:440px;
+        left: 16px;
+    }
+    .is-open.logo {  
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -928,10 +947,6 @@ section {
     .container-header-wrap {
         align-items: flex-start;
     }
-    /* .menu-hamburger {
-            bottom: 0;
-            right: 0;
-        } */
     .contact-link {
         font-weight: 500;
         font-size: 20px;
@@ -947,8 +962,9 @@ section {
 
 @media (min-width: 768px) and (max-width: 1157px) {
     .container {
-        max-width: 736px;
+        width: 736px;
         padding: 0;
+        margin: 0 auto;
     }
     img {
         width: 100%;
@@ -965,6 +981,9 @@ section {
         font-size: 12px;
         line-height: 1.7;
         letter-spacing: 0.04em;
+    }
+    .logo {
+        margin-right: 120px;
     }
     /* .1. */
     .blue-box {
@@ -1022,10 +1041,10 @@ section {
     }
     /* .F. */
     .container-footer {
+        width: 736px;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: center;
-
+        margin: 0;
         column-gap: 24px;
         row-gap: 72px;
     }
@@ -1035,6 +1054,13 @@ section {
     }
     .footer-left {
         margin: 0;
+    }
+    .text-bright {
+        width: 264px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
     .sub-form {
         justify-content: center;
