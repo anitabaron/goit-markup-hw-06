@@ -21,11 +21,11 @@
         <header class="header-top">
             <!--Left navi-->
             <div class="container-header-wrap container">
-                <nav class="navigation menu-hamburger is-open">
+                <nav class="navigation">
                     <a href="./index.html" class="logo"
                         >Web<span class="logo-dark">Studio</span>
                     </a>
-                    <ul class="left-navi-list">
+                    <ul class="left-navi-list visually-hidden">
                         <li>
                             <a href="./index.html" class="link current"
                                 >Studio</a
@@ -41,7 +41,7 @@
                 </nav>
                 <!--Right navi-->
                 <address class="contact-list">
-                    <ul class="right-navi-list menu-hamburger is-open">
+                    <ul class="right-navi-list visually-hidden">
                         <li>
                             <a
                                 href="mailto:info@devstudio.com"
@@ -56,7 +56,42 @@
                         </li>
                     </ul>
                 </address>
-                <ul class="icon-set-sm-footer visually-hidden is-open sm-menu">
+            </div>
+            <!-- menu hamburger -->
+            <div class="container menu-hamburger is-open-ham">
+                <button type="button" class="close-btn">
+                    <svg class="icon-form-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="left-navi-list ham is-open-ham">
+                    <li>
+                        <a href="./index.html" class="link ham current"
+                            >Studio</a
+                        >
+                    </li>
+                    <li>
+                        <a href="" class="link ham">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="" class="link ham">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="right-navi-list-ham is-open-ham">
+                    <li>
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="contact-link ham"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="tel:+110001111111" class="contact-link ham">
+                            +11 (000) 111-11-11</a
+                        >
+                    </li>
+                </ul>
+                <ul class="sm-menu ham is-open-ham">
                     <li class="icon-circle">
                         <a
                             href="https://www.instagram.com/"
@@ -231,6 +266,10 @@
                     <ul class="person-list">
                         <li class="person-card">
                             <img
+                                srcset="
+                                    ./images/man3.jpg    1x,
+                                    ./images/man3@2x.jpg 2x
+                                "
                                 src="./images/man3.jpg"
                                 alt="Man3"
                                 width="264"
@@ -313,6 +352,10 @@
                         </li>
                         <li class="person-card">
                             <img
+                                srcset="
+                                    ./images/man2.jpg    1x,
+                                    ./images/man2@2x.jpg 2x
+                                "
                                 src="./images/man2.jpg"
                                 alt="Man2"
                                 width="264"
@@ -395,6 +438,10 @@
                         </li>
                         <li class="person-card">
                             <img
+                                srcset="
+                                    ./images/woman1.jpg    1x,
+                                    ./images/woman1@2x.jpg 2x
+                                "
                                 src="./images/woman1.jpg"
                                 alt="Woman"
                                 width="264"
@@ -477,6 +524,10 @@
                         </li>
                         <li class="person-card">
                             <img
+                                srcset="
+                                    ./images/man1.jpg    1x,
+                                    ./images/man1@2x.jpg 2x
+                                "
                                 src="./images/man1.jpg"
                                 alt="Man1"
                                 width="264"
@@ -568,6 +619,10 @@
                         <li class="portfolio-media">
                             <div class="portfolio-image">
                                 <img
+                                    srcset="
+                                        ./images/banking.jpg    1x,
+                                        ./images/banking@2x.jpg 2x
+                                    "
                                     src="./images/banking.jpg"
                                     alt="Layout of a banking app"
                                     width="360"
@@ -588,6 +643,10 @@
                         <li class="portfolio-media">
                             <div class="portfolio-image">
                                 <img
+                                    srcset="
+                                        ./images/cashless.jpg    1x,
+                                        ./images/cashless@2x.jpg 2x
+                                    "
                                     src="./images/cashless.jpg"
                                     alt="Layout of a banking app"
                                     width="360"
@@ -608,6 +667,10 @@
                         <li class="portfolio-media">
                             <div class="portfolio-image">
                                 <img
+                                    srcset="
+                                        ./images/meditation.jpg    1x,
+                                        ./images/meditation@2x.jpg 2x
+                                    "
                                     src="./images/meditation.jpg"
                                     alt="Laptop and smartphone with meditation app"
                                     width="360"
@@ -628,6 +691,10 @@
                         <li class="portfolio-media">
                             <div class="portfolio-image">
                                 <img
+                                    srcset="
+                                        ./images/taxi.jpg    1x,
+                                        ./images/taxi@2x.jpg 2x
+                                    "
                                     src="./images/taxi.jpg"
                                     alt="Inside of a car"
                                     width="360"
@@ -648,6 +715,10 @@
                         <li class="portfolio-media">
                             <div class="portfolio-image">
                                 <img
+                                    srcset="
+                                        ./images/screen.jpg    1x,
+                                        ./images/screen@2x.jpg 2x
+                                    "
                                     src="./images/screen.jpg"
                                     alt="Smartphone screen layouts"
                                     width="360"
@@ -670,6 +741,10 @@
                         <li class="portfolio-media">
                             <div class="portfolio-image">
                                 <img
+                                    srcset="
+                                        ./images/online.jpg    1x,
+                                        ./images/online@2x.jpg 2x
+                                    "
                                     src="./images/online.jpg"
                                     alt="Girl with smartphone"
                                     width="360"

@@ -43,11 +43,10 @@ ul p {
 }
 
 .container {
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1158px;
+    /* outline: 2px solid tomato; */
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container-header-wrap {
@@ -769,24 +768,32 @@ section {
     color: #4d5ae5;
 }
 
-/* ----------------- responsive ------------------ */
+/* --- hidden sm mobile --- */
+.sm-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
+/* --- responsive --- */
 /* ==========MOBILE========== */
 @media (max-width: 767px) {
+    .container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    }
     img {
         width: 100%;
     }
     /* ... */
-    /* .container-header-wrap {
+    .container-header-wrap {
         flex-direction: column;
     }
     .navigation {
         flex-direction: column;
-    } */
-    .logo {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 0;
     }
     /* .1. */
     .blue-box {
@@ -825,7 +832,7 @@ section {
     }
 
     .person-list {
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         margin: 0 auto;
         gap: 72px;
@@ -835,6 +842,7 @@ section {
         padding: 96px 0;
     }
     .portfolio-list {
+        flex-direction: column;
         width: 100%;
         margin: 0 auto;
     }
@@ -890,76 +898,81 @@ section {
         position: fixed;
         display: flex;
         top: 0;
-        left: 0;
+        right: 0;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         z-index: 100;
         background-color: white;
         gap: 40px;
-        padding-top: 72px;
-        padding-left: 16px;
-        padding-bottom: 40px;
-        padding-right: 24px;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
-    .sm-menu.ham {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: flex-end;
-        padding-top: 48px;
-        /* display: none; */
-    }
-    .menu-hamburger.is-open-ham,
-    .sm-menu-ham.is-open-ham {
-        display: block;
-    }
-
-    .left-navi-list.ham {
+    .menu-hamburger.is-open,
+    .sm-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        }
+    .left-navi-list {
         flex-direction: column;
-        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 16px;
     }
-    .current::after {
-        content: "";
-        display: none;
-    }
-    .right-navi-list.ham {
+    .right-navi-list {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        position: absolute;
+        top:440px;
+        left: 16px;
     }
-    .link.ham {
+    .is-open.logo {  
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+    }
+    .link {
         font-size: 36px;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-transform: capitalize;
     }
-    .contact-link.ham {
+    .logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 0;
+    }
+    .container-header-wrap {
+        align-items: flex-start;
+    }
+    .contact-link {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
     }
-
     /* modal mobile */
     .modal {
-        width: 100%;
+        width: 288px;
         min-height: 623px;
     }
 }
-
 /* ==========TABLET========== */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px) {
     .container {
-        max-width: 768px;
+        width: 736px;
+        padding: 0;
+        margin: 0 auto;
     }
     img {
         width: 100%;
     }
     /* ... */
-
+    
     .right-navi-list {
         flex-direction: column;
         flex-wrap: wrap;
@@ -1073,15 +1086,9 @@ section {
     }
     /* .modal. */
     .modal {
-        top: 80px;
-    }
+    top: 80px;
 }
 
 /* ==========DESKTOP========== */
 @media (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 }
