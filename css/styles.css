@@ -535,14 +535,14 @@ section {
     pointer-events: none;
 }
 
-/* .backdrop.is-open {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-} */
+}
 
 .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -777,13 +777,13 @@ section {
     img {
         width: 100%;
     }
-    /* ... */
+    /* mobile.header */
     .logo {
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 0;
     }
-    /* .1. */
+    /* mobile.1. */
     .blue-box {
         max-width: 100%;
         padding: 72px 0;
@@ -791,7 +791,7 @@ section {
     .main-header {
         font-size: 36px;
     }
-    /* .2. */
+    /* mobile.2. */
     .goals-columns {
         padding: 96px 0;
     }
@@ -815,7 +815,7 @@ section {
     .goals {
         font-weight: 500;
     }
-    /* .3. */
+    /* mobile.3. */
     .team-background {
         padding: 72px 0;
     }
@@ -825,7 +825,7 @@ section {
         justify-content: center;
         gap: 72px;
     }
-    /* .4. */
+    /* mobile.4. */
     .portfolio-grid {
         padding: 96px 0;
     }
@@ -837,7 +837,7 @@ section {
         width: 100%;
         /* height:  */
     }
-    /* .F. */
+    /* mobile.F. */
     .container-footer {
         flex-direction: column;
         align-items: center;
@@ -880,7 +880,7 @@ section {
         opacity: 0.6;
     }
 
-    /* menu hamburger */
+    /* mobile.menu hamburger */
 
     .icon-ham {
         fill: #2f2f37;
@@ -940,19 +940,20 @@ section {
         letter-spacing: 0.02em;
     }
 
-    .menu-hamburger.is-open-ham {
+    /* .menu-hamburger.is-open-ham {
         transform: translateX(0);
-    }
+    } */
     .is-hidden {
         display: none;
     }
+    /* mobile.modal  */
+    .modal {
+        width: 288px;
+        min-height: 623px;
+        padding: 72px 16px 24px 16px;
+    }
 }
 
-/* modal mobile */
-.modal {
-    width: 100%;
-    min-height: 623px;
-}
 
 /* ==========TABLET========== */
 @media (min-width: 768px) {
@@ -963,7 +964,7 @@ section {
     img {
         width: 100%;
     }
-    /* ... */
+    /* tablet.header */
 
     .right-navi-list {
         flex-direction: column;
@@ -983,12 +984,12 @@ section {
     .menu-icon-ham {
         display: none;
     }
-    /* .1. */
+    /* tablet.1. */
     .blue-box {
         max-width: 100%;
         padding: 112px 0;
     }
-    /* .2. */
+    /* tablet.2. */
     .goals-columns {
         padding: 96px 0;
     }
@@ -1011,7 +1012,7 @@ section {
     .goals {
         font-weight: 500;
     }
-    /* .3. */
+    /* tablet.3. */
     .team-background {
         padding: 96px 0;
     }
@@ -1022,7 +1023,7 @@ section {
         column-gap: 24px;
         row-gap: 64px;
     }
-    /* .4. */
+    /* tablet.4. */
     .portfolio-grid {
         padding: 96px 0;
     }
@@ -1037,7 +1038,7 @@ section {
         width: calc((100% - 24px) / 2);
         /* height:  */
     }
-    /* .F. */
+    /* tablet.F. */
     .container-footer {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -1079,9 +1080,10 @@ section {
         line-height: 2;
         opacity: 0.6;
     }
-    /* .modal. */
+    /* tablet.modal. */
     .modal {
-        top: 80px;
+        width: 408px;
+        min-height: 584px;
     }
 }
 
@@ -1092,7 +1094,7 @@ section {
         padding-left: 15px;
         padding-right: 15px;
     }
-    /* desktop .4. */
+    /* desktop.4. */
     .portfolio-list {
     column-gap: 24px;
     row-gap: 48px;
