@@ -939,10 +939,9 @@ section {
         line-height: 1.2;
         letter-spacing: 0.02em;
     }
-
-    /* .menu-hamburger.is-open-ham {
+    .menu-hamburger.is-open-ham {
         transform: translateX(0);
-    } */
+    }
     .is-hidden {
         display: none;
     }
