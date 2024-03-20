@@ -63,7 +63,6 @@ section {
 /* --- header section 0 --- */
 
 .container-header-wrap {
-    /* outline: 2px solid tomato; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,7 +76,6 @@ section {
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
@@ -202,9 +200,9 @@ section {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-/* .menu-hamburger.is-open-ham {
+.menu-hamburger.is-open-ham {
     transform: translateX(0);
-} */
+}
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -218,7 +216,7 @@ section {
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
-        url(../images/heroimage.jpg);
+        url(../images/heroimage-mobile.jpg);
     max-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -595,11 +593,11 @@ section {
     pointer-events: none;
 }
 
-/* .backdrop.is-open {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-} */
+}
 
 .modal {
     position: fixed;
@@ -894,6 +892,11 @@ section {
     }
     /* tablet.1. */
     .blue-box {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/heroimage-tablet.jpg);
         max-width: 100%;
         padding: 112px 0;
     }
@@ -943,7 +946,6 @@ section {
     }
     .portfolio-media {
         width: calc((100% - 24px) / 2);
-        /* height:  */
     }
     /* tablet.F. */
     .container-footer {
@@ -1032,10 +1034,14 @@ section {
     }
     /* desktop.1. */
     .blue-box {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/heroimage-desktop.jpg);
         max-width: 1440px;
         padding: 188px 0;
     }
-
     /* desktop.2. */
     .goals-columns {
         padding: 120px 0;
