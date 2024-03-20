@@ -202,13 +202,9 @@ section {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-.menu-hamburger.is-open-ham {
+/* .menu-hamburger.is-open-ham {
     transform: translateX(0);
-}
-.menu-icon-ham:hover .menu-hamburger.is-open-ham,
-.menu-icon-ham:focus .menu-hamburger.is-open-ham {
-    transform: translateX(0);
-}
+} */
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -314,7 +310,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    row-gap: 72px;
 }
 
 .person-card {
@@ -527,6 +523,7 @@ section {
 }
 
 .sub-form {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -598,11 +595,11 @@ section {
     pointer-events: none;
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+} */
 
 .modal {
     position: fixed;
