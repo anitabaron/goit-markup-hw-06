@@ -828,6 +828,16 @@ section {
     color: #4d5ae5;
 }
 
+@media (min-resolution: 192dpi) {
+    .blue-box {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/heroimage-mobile@2x.jpg);
+    }
+}
+
 /* ----------------------------- responsive -------------------------- */
 
 /* ==================================TABLET===================================== */
@@ -1002,6 +1012,15 @@ section {
         min-height: 584px;
     }
 }
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+    .blue-box {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/heroimage-tablet@2x.jpg);
+    }
+}
 
 /* ================================DESKTOP================================== */
 @media (min-width: 1158px) {
@@ -1124,5 +1143,14 @@ section {
         width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
+    }
+}
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .blue-box {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/heroimage-desktop@2x.jpg);
     }
 }
