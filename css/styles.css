@@ -120,6 +120,14 @@ section {
     font-style: normal;
 }
 
+.right-navi-list {
+    display: none;
+}
+
+.left-navi-list {
+    display: none;
+}
+
 .contact-link {
     color: #434455;
     font-style: normal;
@@ -170,9 +178,13 @@ section {
     margin-top: 48px;
 }
 .left-navi-list.ham {
+    display: flex;
     flex-direction: column;
     padding: 0;
     gap: 40px;
+}
+.link.ham.current {
+    color: #404bbf;
 }
 .current::after {
     content: "";
@@ -203,6 +215,12 @@ section {
 .menu-hamburger.is-open-ham {
     transform: translateX(0);
 }
+.menu-icon-ham {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -217,7 +235,7 @@ section {
             rgba(46, 47, 66, 0.7)
         ),
         url(../images/heroimage-mobile.jpg);
-    max-width: 100%;
+    max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -233,7 +251,7 @@ section {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 200px;
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -378,10 +396,6 @@ section {
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.description-text {
-    margin-bottom: 8px;
-}
-
 .inner-text {
     font-size: 16px;
     line-height: 1.5;
@@ -446,6 +460,8 @@ section {
     margin-right: 0;
     align-content: center;
     text-align: center;
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 .logo .logo-bright {
@@ -461,8 +477,6 @@ section {
 
 .footer-background {
     background-color: #2e2f42;
-    height: auto;
-    padding: 96px 0;
 }
 
 .footer-left {
@@ -912,6 +926,7 @@ section {
     }
     .main-header {
         font-size: 56px;
+        max-width: 496px;
     }
     /* tablet.2. */
     .goals-columns {
@@ -929,7 +944,7 @@ section {
     .list-titles.mobile-h2 {
         font-size: 36px;
         font-weight: 700;
-        text-align: center;
+        text-align: left;
     }
 
     /* tablet.3. */
@@ -964,9 +979,10 @@ section {
         justify-content: flex-start;
         column-gap: 24px;
         row-gap: 72px;
+        align-items: baseline;
+        max-width: 530px;
     }
     .footer-background {
-        height: auto;
         padding: 96px 108px;
     }
     .footer-left {
@@ -1097,7 +1113,6 @@ section {
     .list-titles.desktop-h3 {
         font-size: 20px;
         font-weight: 500;
-        text-align: left;
     }
     /* desktop.4. */
     .portfolio-list {
