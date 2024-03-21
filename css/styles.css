@@ -922,7 +922,7 @@ section {
                 rgba(46, 47, 66, 0.7)
             ),
             url(../images/heroimage-tablet.jpg);
-        max-width: 100%;
+        max-width: 768px;
         padding: 112px 0;
     }
     .main-header {
