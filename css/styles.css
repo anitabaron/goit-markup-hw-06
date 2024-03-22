@@ -8,9 +8,6 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 
 img {
@@ -29,6 +26,11 @@ p {
     margin: 0;
 }
 
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 ul {
     list-style: none;
     margin: 0;
@@ -134,7 +136,7 @@ section {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
@@ -343,7 +345,7 @@ section {
 
 .team-background {
     background-color: #f4f4fd;
-    padding: 72px 0;
+    padding: 96px 0;
 }
 
 .function {
@@ -453,7 +455,6 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    padding: 96px 0;
 }
 
 .logo-bottom {
@@ -478,6 +479,7 @@ section {
 
 .footer-background {
     background-color: #2e2f42;
+    padding: 96px 0;
 }
 
 .footer-left {
@@ -859,25 +861,12 @@ section {
 @media (min-width: 768px) {
     .container {
         max-width: 768px;
-        margin: 0 auto;
-    }
-    img {
-        width: 100%;
     }
     /* tablet.header */
-    .left-navi-list.is-open,
-    .right-navi-list.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        flex-direction: row;
-    }
     .right-navi-list {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         gap: 12px;
-        padding: 16px 0;
         justify-content: flex-end;
     }
     .left-navi-list {
@@ -949,9 +938,6 @@ section {
     }
 
     /* tablet.3. */
-    .team-background {
-        padding: 96px 0;
-    }
     .person-list {
         flex-wrap: wrap;
         justify-content: center;
@@ -983,9 +969,6 @@ section {
         align-items: baseline;
         max-width: 530px;
     }
-    .footer-background {
-        padding: 96px 108px;
-    }
     .footer-left {
         margin: 0;
     }
@@ -1007,6 +990,7 @@ section {
     .logo-bottom {
         display: block;
         margin-right: 0;
+        text-align: left;
     }
     .sub {
         margin: 0;
@@ -1046,22 +1030,21 @@ section {
         padding-left: 15px;
         padding-right: 15px;
     }
-    img {
-        max-width: 100%;
-    }
     /* desktop.header */
     .logo {
         padding: 0;
-    }
-    .right-navi-list {
-        gap: 40px;
-        padding: 24px 0;
-        margin-right: 0;
+        margin-right: 76px;
     }
 
     .left-navi-list,
     .right-navi-list {
         flex-direction: row;
+    }
+    .right-navi-list {
+        gap: 40px;
+        padding: 24px 0;
+        margin-right: 0;
+        justify-content: flex-end;
     }
     .contact-link {
         font-size: 16px;
