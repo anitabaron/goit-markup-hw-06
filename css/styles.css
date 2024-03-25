@@ -900,9 +900,7 @@ section {
     }
     .menu-hamburger,
     .menu-icon-ham {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+        display: none;
     }
     /* tablet.1. */
     .blue-box {
